@@ -3,6 +3,7 @@ import { Link, useLocation } from "react-router-dom";
 import { Menu, X } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { cn } from "@/lib/utils";
+import logo from "@/assets/InspireAI Icon.jpg";
 
 const navigation = [
   { name: "Home", href: "/" },
@@ -27,8 +28,12 @@ export const Navbar = () => {
         <div className="flex justify-between items-center h-16">
           {/* Logo */}
           <Link to="/" className="flex items-center space-x-2">
-            <div className="w-10 h-10 bg-gradient-hero rounded-lg flex items-center justify-center">
-              <span className="text-white font-bold text-xl font-montserrat">IA</span>
+            <div className="w-10 h-10 rounded-lg overflow-hidden">
+              <img
+                src={logo}
+                alt="InspireAI Logo"
+                className="w-full h-full object-cover"
+              />
             </div>
             <span className="font-montserrat font-bold text-xl text-foreground">
               InspireAI Africa
@@ -68,7 +73,11 @@ export const Navbar = () => {
               onClick={() => setIsOpen(!isOpen)}
               aria-label="Toggle menu"
             >
-              {isOpen ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}
+              {isOpen ? (
+                <X className="h-6 w-6" />
+              ) : (
+                <Menu className="h-6 w-6" />
+              )}
             </Button>
           </div>
         </div>

@@ -30,7 +30,7 @@ export default function Contact() {
       icon: Phone,
       title: "Call Us",
       description: "Speak directly with our team",
-      contact: "+254 (0) 123 456 7890",
+      contact: "+254 (07) 957 723 09",
       note: "Mon-Fri, 9AM-5PM EAT"
     },
     {
@@ -44,7 +44,7 @@ export default function Contact() {
       icon: MessageSquare,
       title: "WhatsApp",
       description: "Quick questions and support",
-      contact: "+254 (0) 123 456 7890",
+      contact: "+254 (07) 957 723 09",
       note: "Available 9AM-6PM EAT"
     }
   ];
@@ -171,7 +171,7 @@ export default function Contact() {
                         id="phone"
                         value={formData.phone}
                         onChange={(e) => handleInputChange("phone", e.target.value)}
-                        placeholder="+234 123 456 7890"
+                        placeholder="+254 123 456 7890"
                       />
                     </div>
                     <div className="space-y-2">
