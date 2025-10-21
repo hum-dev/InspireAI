@@ -9,61 +9,55 @@ All colors MUST be HSL.
 
 @layer base {
   :root {
-    /* Brand Colors */
-    --brand-purple: 270 55% 45%; /* Deeper Purple */
-    --brand-mint: 160 40% 70%; /* Soft Mint Green */
-    --brand-coral: 15 70% 70%; /* Soft Coral/Peach */
-    --brand-pink: 350 30% 95%; /* Soft Pink/Rose */
-    --brand-charcoal: 240 20% 20%; /* Dark Charcoal */
-    --brand-deep-purple: 270 35% 20%; /* Darker Deep Purple */
-
+    /* Vibrant Brand Colors */
+    --brand-blush: 0 62% 90%; /* Blush - Backgrounds, soft UI sections */
+    --brand-peachy: 23 76% 66%; /* Peachy - Accent color for buttons, icons */
+    --brand-tangerine: 15 78% 52%; /* Tangerine - Primary brand color, CTA highlights */
+    --brand-barbie: 329 70% 62%; /* Barbie - Secondary accent, hover effects */
+    --brand-cherry: 336 64% 42%; /* Cherry - Headlines, key highlights */
+    --brand-plum: 331 57% 34%; /* Plum - Text emphasis, dark backgrounds */
+    --brand-white: 0 0% 100%;
+    
     /* Semantic Colors */
-    --background: 0 0% 100%; /* White */
-    --foreground: 240 20% 20%; /* Charcoal for readable text */
+    --background: 0 62% 90%; /* Warm blush background */
+    --foreground: 0 0% 15%; /* Basic dark gray for text */
 
-    --card: 350 30% 95%; /* Soft Pink/Rose */
-    --card-foreground: 240 20% 20%;
+    --card: 0 0% 100%;
+    --card-foreground: 0 0% 15%; /* Basic dark gray text on white cards */
 
     --popover: 0 0% 100%;
-    --popover-foreground: 240 20% 20%;
+    --popover-foreground: 0 0% 15%;
 
-    --primary: 270 55% 45%; /* Deeper Purple */
-    --primary-foreground: 0 0% 100%;
+    --primary: 15 78% 52%; /* Tangerine - Primary brand color */
+    --primary-foreground: 0 0% 100%; /* White text on tangerine */
 
-    --secondary: 160 40% 70%; /* Soft Mint Green */
-    --secondary-foreground: 240 20% 20%;
+    --secondary: 331 57% 34%; /* Plum - Secondary color */
+    --secondary-foreground: 0 0% 100%; /* White text on plum */
 
-    --muted: 350 30% 95%; /* Soft Pink/Rose */
-    --muted-foreground: 240 20% 35%;
+    --muted: 0 62% 95%; /* Very light blush */
+    --muted-foreground: 0 0% 35%; /* Basic dark gray for muted text */
 
-    --accent: 15 70% 70%; /* Soft Coral/Peach */
-    --accent-foreground: 240 20% 20%;
+    --accent: 329 70% 62%; /* Barbie - Accent color */
+    --accent-foreground: 0 0% 100%; /* White text on barbie */
 
     --destructive: 0 84.2% 60.2%;
     --destructive-foreground: 0 0% 100%;
 
-    --border: 33 20% 85%;
-    --input: 33 20% 90%;
-    --ring: 21 73% 56%;
+    --border: 0 62% 85%; /* Light blush border */
+    --input: 0 62% 97%; /* Very light blush input */
+    --ring: 15 78% 52%; /* Tangerine focus ring */
 
     --radius: 0.75rem;
-
+    
     /* Gradients */
-    --gradient-hero: linear-gradient(
-      135deg,
-      hsl(var(--primary)),
-      hsl(var(--secondary))
-    );
-    --gradient-accent: linear-gradient(
-      180deg,
-      hsl(var(--primary) / 0.1),
-      hsl(var(--secondary) / 0.1)
-    );
-
+    --gradient-hero: linear-gradient(135deg, hsl(var(--brand-tangerine)), hsl(var(--brand-barbie)));
+    --gradient-accent: linear-gradient(180deg, hsl(var(--brand-blush) / 0.3), hsl(var(--brand-peachy) / 0.1));
+    --gradient-soft: linear-gradient(135deg, hsl(var(--brand-blush) / 0.5), hsl(var(--brand-peachy) / 0.3));
+    
     /* Shadows */
-    --shadow-soft: 0 4px 20px hsl(var(--primary) / 0.1);
-    --shadow-medium: 0 8px 30px hsl(var(--primary) / 0.15);
-    --shadow-strong: 0 12px 40px hsl(var(--primary) / 0.2);
+    --shadow-soft: 0 4px 20px hsl(var(--brand-tangerine) / 0.15);
+    --shadow-medium: 0 8px 30px hsl(var(--brand-tangerine) / 0.2);
+    --shadow-strong: 0 12px 40px hsl(var(--brand-tangerine) / 0.25);
 
     --sidebar-background: 0 0% 98%;
 
@@ -83,26 +77,26 @@ All colors MUST be HSL.
   }
 
   .dark {
-    --background: 270 35% 20%; /* Darker Deep Purple */
-    --foreground: 0 0% 100%;
+    --background: 222.2 84% 4.9%;
+    --foreground: 210 40% 98%;
 
-    --card: 270 35% 15%;
-    --card-foreground: 0 0% 100%;
+    --card: 222.2 84% 4.9%;
+    --card-foreground: 210 40% 98%;
 
-    --popover: 270 35% 20%;
-    --popover-foreground: 0 0% 100%;
+    --popover: 222.2 84% 4.9%;
+    --popover-foreground: 210 40% 98%;
 
-    --primary: 270 55% 45%; /* Deeper Purple */
-    --primary-foreground: 0 0% 100%;
+    --primary: 210 40% 98%;
+    --primary-foreground: 222.2 47.4% 11.2%;
 
-    --secondary: 160 40% 60%; /* Darker Mint Green for dark mode */
-    --secondary-foreground: 0 0% 100%;
+    --secondary: 217.2 32.6% 17.5%;
+    --secondary-foreground: 210 40% 98%;
 
-    --muted: 270 30% 30%;
-    --muted-foreground: 270 20% 85%;
+    --muted: 217.2 32.6% 17.5%;
+    --muted-foreground: 215 20.2% 65.1%;
 
-    --accent: 15 60% 65%; /* Slightly muted Coral for dark mode */
-    --accent-foreground: 0 0% 100%;
+    --accent: 217.2 32.6% 17.5%;
+    --accent-foreground: 210 40% 98%;
 
     --destructive: 0 62.8% 30.6%;
     --destructive-foreground: 210 40% 98%;

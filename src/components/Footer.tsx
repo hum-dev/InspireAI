@@ -2,6 +2,7 @@ import { Link } from "react-router-dom";
 import { Facebook, Twitter, Linkedin, Instagram, Mail, MapPin, Phone } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
+import logo from "@/assets/InspireAI.png";
 
 export const Footer = () => {
   return (
@@ -10,12 +11,18 @@ export const Footer = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
           {/* About Section */}
           <div className="space-y-4">
-            <div className="flex items-center space-x-2">
-              <div className="w-8 h-8 bg-primary rounded-lg flex items-center justify-center">
-                <span className="text-white font-bold text-sm font-montserrat">IA</span>
-              </div>
-              <span className="font-montserrat font-bold text-lg">InspireAI Africa</span>
+ <Link to="/" className="flex items-center space-x-2">
+            <div className="w-10 h-10 rounded-lg overflow-hidden">
+              <img
+                src={logo}
+                alt="InspireAI Logo"
+                className="w-full h-full object-cover"
+              />
             </div>
+            <span className="font-montserrat font-bold text-xl text-foreground">
+              InspireAI Africa
+            </span>
+          </Link>
             <p className="font-roboto text-sm leading-relaxed">
               Empowering Africa's future through AI, robotics, and digital skills training.
               Building the next generation of tech innovators.

@@ -3,7 +3,7 @@ import { Link, useLocation } from "react-router-dom";
 import { Menu, X } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { cn } from "@/lib/utils";
-import logo from "@/assets/InspireAI Icon.jpg";
+import logo from "@/assets/InspireAI.png";
 
 const navigation = [
   { name: "Home", href: "/" },
