@@ -8,6 +8,10 @@ export default defineConfig(({ mode }) => ({
   server: {
     host: "::",
     port: 8080,
+    allowedHosts: [
+      "aglow-elouise-athetosic.ngrok-free.dev",
+      ".ngrok-free.dev", // This allows any ngrok-free.dev subdomain
+    ],
   },
   plugins: [react(), mode === "development" && componentTagger()].filter(Boolean),
   resolve: {
