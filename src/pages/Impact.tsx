@@ -15,7 +15,7 @@ export default function Impact() {
       name: "Amara Okafor",
       role: "AI Developer at TechCorp",
       location: "Lagos, Nigeria",
-      story: "InspireAI's bootcamp changed my life completely. I went from having no coding experience to landing a job as an AI developer at one of Nigeria's top tech companies. The hands-on approach and mentorship made all the difference.",
+      story: "AIspireAI's bootcamp changed my life completely. I went from having no coding experience to landing a job as an AI developer at one of Nigeria's top tech companies. The hands-on approach and mentorship made all the difference.",
       program: "AI & Robotics Bootcamp"
     },
     {
@@ -87,7 +87,7 @@ export default function Impact() {
             Our Impact Across Africa
           </h1>
           <p className="font-roboto text-lg text-muted-foreground max-w-3xl mx-auto">
-            See how InspireAI Africa Network is transforming lives, careers, and communities 
+            See how AIspireAI Africa Network is transforming lives, careers, and communities 
             through AI and robotics education. These are the stories that drive our mission.
           </p>
         </div>

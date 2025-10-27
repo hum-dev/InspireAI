@@ -15,12 +15,12 @@ export const Footer = () => {
             <div className="w-10 h-10 rounded-lg overflow-hidden">
               <img
                 src={logo}
-                alt="InspireAI Logo"
+                alt="AIspireAI Logo"
                 className="w-full h-full object-cover"
               />
             </div>
             <span className="font-montserrat font-bold text-xl text-foreground">
-              InspireAI Africa
+              AIspireAfrica
             </span>
           </Link>
             <p className="font-roboto text-sm leading-relaxed">
@@ -73,7 +73,7 @@ export const Footer = () => {
             <div className="space-y-3 font-roboto text-sm">
               <div className="flex items-center space-x-2">
                 <Mail className="h-4 w-4 text-primary" />
-                <span>info@inspireai-africa.org</span>
+                <span>info@aispireai-africa.org</span>
               </div>
               <div className="flex items-center space-x-2">
                 <Phone className="h-4 w-4 text-primary" />
@@ -106,7 +106,7 @@ export const Footer = () => {
           <div className="flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
             <p className="font-roboto text-sm">
               {/* get current year */}
-              © {new Date().getFullYear()} InspireAI Africa Network. All rights reserved.
+              © {new Date().getFullYear()} AIspire Africa Network. All rights reserved.
             </p>
             <div className="flex space-x-6 font-roboto text-sm">
               <Link to="/privacy" className="hover:text-primary transition-colors">Privacy Policy</Link>

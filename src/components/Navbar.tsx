@@ -31,12 +31,12 @@ export const Navbar = () => {
             <div className="w-10 h-10 rounded-lg overflow-hidden">
               <img
                 src={logo}
-                alt="InspireAI Logo"
+                alt="AIspireAfrica Logo"
                 className="w-full h-full object-cover"
               />
             </div>
             <span className="font-montserrat font-bold text-xl text-foreground">
-              InspireAI Africa
+              AIspireAfrica
             </span>
           </Link>
 

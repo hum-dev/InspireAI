@@ -9,7 +9,7 @@ export default defineConfig(({ mode }) => ({
     host: "::",
     port: 8080,
     allowedHosts: [
-      "aglow-elouise-athetosic.ngrok-free.dev",
+      "16578c91d84e.ngrok-free.app",
       ".ngrok-free.dev", // This allows any ngrok-free.dev subdomain
     ],
   },

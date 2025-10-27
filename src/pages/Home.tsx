@@ -39,7 +39,7 @@ export default function Home() {
     {
       name: "Amara Okafor",
       role: "Bootcamp Graduate",
-      content: "InspireAI changed my life. I went from knowing nothing about AI to building my own chatbot in just 3 months!",
+      content: "AIspireAI changed my life. I went from knowing nothing about AI to building my own chatbot in just 3 months!",
     },
     {
       name: "Dr. Joseph Mensah",
@@ -49,7 +49,7 @@ export default function Home() {
     {
       name: "Sarah Abdullahi", 
       role: "Corporate Partner",
-      content: "InspireAI's corporate training helped our team understand AI applications. We've increased productivity by 40%.",
+      content: "AIspireAI's corporate training helped our team understand AI applications. We've increased productivity by 40%.",
     },
   ];
 

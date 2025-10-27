@@ -4,10 +4,10 @@ const TermsOfService = () => {
   return (
     <>
       <Helmet>
-        <title>Terms of Service - InspireAI Africa Network</title>
+        <title>Terms of Service - AIspire Africa Network</title>
         <meta 
           name="description" 
-          content="Read the terms and conditions for using InspireAI Africa Network services, website, and educational programs. Know your rights and responsibilities." 
+          content="Read the terms and conditions for using AIspire Africa Network services, website, and educational programs. Know your rights and responsibilities." 
         />
         <link rel="canonical" href="/terms" />
       </Helmet>
@@ -28,7 +28,7 @@ const TermsOfService = () => {
               <div className="bg-card p-8 rounded-lg border border-border space-y-8">
                 <section>
                   <p className="text-foreground leading-relaxed">
-                    Welcome to InspireAI Africa Network. By accessing our website or participating in our programs, you agree to the following terms and conditions.
+                    Welcome to AIspire Africa Network. By accessing our website or participating in our programs, you agree to the following terms and conditions.
                   </p>
                 </section>
 
@@ -53,7 +53,7 @@ const TermsOfService = () => {
                 <section>
                   <h2 className="text-2xl font-semibold font-montserrat text-foreground mb-4">Intellectual Property</h2>
                   <ul className="space-y-2 text-foreground">
-                    <li>All content, logos, and materials are property of InspireAI Africa Network.</li>
+                    <li>All content, logos, and materials are property of AIspire Africa Network.</li>
                     <li>You may not reproduce or use content without written consent.</li>
                   </ul>
                 </section>

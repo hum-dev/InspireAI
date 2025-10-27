@@ -32,7 +32,7 @@ export default function About() {
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto text-center">
             <h1 className="font-montserrat font-bold text-4xl md:text-5xl text-foreground mb-6">
-              About InspireAI Africa Network
+              About AIspire Africa Network
             </h1>
             <p className="font-roboto text-lg text-muted-foreground leading-relaxed">
               We are a pan-African organization dedicated to empowering youth and professionals 
@@ -75,7 +75,7 @@ export default function About() {
             </h2>
             <div className="space-y-6 font-roboto text-lg text-muted-foreground leading-relaxed">
               <p>
-                InspireAI Africa Network was born from a simple observation: Africa has tremendous talent, 
+                AIspire Africa Network was born from a simple observation: Africa has tremendous talent, 
                 but limited access to cutting-edge technology education. Our founders, a group of educators 
                 and tech professionals from across the continent, came together with a shared vision of 
                 democratizing AI and robotics education.
@@ -109,7 +109,7 @@ export default function About() {
           <div className="bg-card rounded-lg p-12 shadow-soft">
             <p className="font-roboto text-muted-foreground">
               Team profiles and founder stories coming soon. Follow us on social media 
-              to meet the amazing people behind InspireAI Africa Network.
+              to meet the amazing people behind AIspire Africa Network.
             </p>
           </div>
         </div>

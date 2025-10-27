@@ -23,7 +23,7 @@ export default function Contact() {
       icon: Mail,
       title: "Email Us",
       description: "Get in touch for general inquiries",
-      contact: "info@inspireai-africa.org",
+      contact: "info@aispireai-africa.org",
       note: "Response within 24 hours"
     },
     {
@@ -262,7 +262,7 @@ export default function Contact() {
                 answer: "We offer comprehensive career support including resume review, interview preparation, job referrals, and access to our employer network. Our job placement rate is 80% within 6 months of graduation."
               },
               {
-                question: "How can my organization partner with InspireAI Africa?",
+                question: "How can my organization partner with AIspire Africa?",
                 answer: "We offer various partnership opportunities including sponsorships, corporate training, talent pipeline access, and curriculum collaboration. Contact us to discuss how we can work together."
               }
             ].map((faq, index) => (

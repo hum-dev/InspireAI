@@ -106,7 +106,7 @@ export default function GetInvolved() {
       <section className="py-20 bg-gradient-hero text-white">
         <div className="container mx-auto px-4 text-center">
           <h1 className="font-montserrat font-bold text-4xl md:text-5xl mb-6">
-            Get Involved with InspireAI Africa
+            Get Involved with AIspire Africa
           </h1>
           <p className="font-roboto text-lg md:text-xl mb-8 max-w-3xl mx-auto">
             Whether you're a student, professional, educator, or organization, there's a place 

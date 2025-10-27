@@ -4,10 +4,10 @@ const PrivacyPolicy = () => {
   return (
     <>
       <Helmet>
-        <title>Privacy Policy - InspireAI Africa Network</title>
+        <title>Privacy Policy - AIspireAI Africa Network</title>
         <meta 
           name="description" 
-          content="Learn how InspireAI Africa Network protects your privacy and handles your personal data. Our privacy policy explains data collection, usage, and your rights." 
+          content="Learn how AIspireAI Africa Network protects your privacy and handles your personal data. Our privacy policy explains data collection, usage, and your rights." 
         />
         <link rel="canonical" href="/privacy" />
       </Helmet>
@@ -28,7 +28,7 @@ const PrivacyPolicy = () => {
               <div className="bg-card p-8 rounded-lg border border-border space-y-8">
                 <section>
                   <p className="text-foreground leading-relaxed">
-                    InspireAI Africa Network is committed to protecting your privacy. This Privacy Policy explains how we collect, use, disclose, and safeguard your information when you visit our website or participate in our programs.
+                    AIspireAI Africa Network is committed to protecting your privacy. This Privacy Policy explains how we collect, use, disclose, and safeguard your information when you visit our website or participate in our programs.
                   </p>
                 </section>
 
@@ -65,7 +65,7 @@ const PrivacyPolicy = () => {
                   <ul className="space-y-2 text-foreground">
                     <li>Access, correct, or delete your personal data.</li>
                     <li>Withdraw consent for marketing communications.</li>
-                    <li>Contact us at info@inspireai-africa.org for data inquiries.</li>
+                    <li>Contact us at info@aispireai-africa.org for data inquiries.</li>
                   </ul>
                 </section>
 

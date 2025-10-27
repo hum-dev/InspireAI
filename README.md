@@ -1,6 +1,6 @@
-# 🌍 InspireAI Africa Network Website
+# 🌍 AIspire Africa Network Website
 
-A modern, mobile-friendly, and professional website for **InspireAI Africa Network**, an organization empowering African youth and professionals through AI, robotics, and digital skills training.
+A modern, mobile-friendly, and professional website for **AIspire Africa Network**, an organization empowering African youth and professionals through AI, robotics, and digital skills training.
 
 ---
 
@@ -46,7 +46,7 @@ A modern, mobile-friendly, and professional website for **InspireAI Africa Netwo
 ## 📁 Folder Structure
 
 ```bash
-inspireai-africa/
+aispireai-africa/
 ├── public/
 │   └── assets/                  # Static files (logo, icons, images)
 ├── src/

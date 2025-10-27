@@ -4,10 +4,10 @@ const CookiePolicy = () => {
   return (
     <>
       <Helmet>
-        <title>Cookie Policy - InspireAI Africa Network</title>
+        <title>Cookie Policy - AIspire Africa Network</title>
         <meta 
           name="description" 
-          content="Learn about how InspireAI Africa Network uses cookies to enhance your browsing experience and improve website functionality." 
+          content="Learn about how AIspire Africa Network uses cookies to enhance your browsing experience and improve website functionality." 
         />
         <link rel="canonical" href="/cookies" />
       </Helmet>
@@ -28,7 +28,7 @@ const CookiePolicy = () => {
               <div className="bg-card p-8 rounded-lg border border-border space-y-8">
                 <section>
                   <p className="text-foreground leading-relaxed">
-                    InspireAI Africa Network uses cookies to enhance your browsing experience and improve website functionality.
+                    AIspire Africa Network uses cookies to enhance your browsing experience and improve website functionality.
                   </p>
                 </section>
 
