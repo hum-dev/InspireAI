@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 import { Facebook, Twitter, Linkedin, Instagram, Mail, MapPin, Phone } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
-import logo from "@/assets/InspireAI.png";
+import logo from "@/assets/AIspire.png";
 import { NewsletterSubscription } from "@/components/NewsletterSubscription";
 
 export const Footer = () => {
