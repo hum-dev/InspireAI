@@ -1,8 +1,8 @@
+@import "./styles/responsive.css";
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
-@import "./styles/responsive.css";
 
 /* InspireAI Africa Network Design System 
 Brand Colors: Vibrant orange (#E07D3B), deep olive green (#546D37), soft beige/cream (#F7F2F1)
