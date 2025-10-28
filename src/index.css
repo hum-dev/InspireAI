@@ -2,6 +2,8 @@
 @tailwind components;
 @tailwind utilities;
 
+@import "./styles/responsive.css";
+
 /* InspireAI Africa Network Design System 
 Brand Colors: Vibrant orange (#E07D3B), deep olive green (#546D37), soft beige/cream (#F7F2F1)
 All colors MUST be HSL.
@@ -17,7 +19,7 @@ All colors MUST be HSL.
     --brand-cherry: 336 64% 42%; /* Cherry - Headlines, key highlights */
     --brand-plum: 331 57% 34%; /* Plum - Text emphasis, dark backgrounds */
     --brand-white: 0 0% 100%;
-    
+
     /* Semantic Colors */
     --background: 0 62% 90%; /* Warm blush background */
     --foreground: 0 0% 15%; /* Basic dark gray for text */
@@ -48,12 +50,24 @@ All colors MUST be HSL.
     --ring: 15 78% 52%; /* Tangerine focus ring */
 
     --radius: 0.75rem;
-    
+
     /* Gradients */
-    --gradient-hero: linear-gradient(135deg, hsl(var(--brand-tangerine)), hsl(var(--brand-barbie)));
-    --gradient-accent: linear-gradient(180deg, hsl(var(--brand-blush) / 0.3), hsl(var(--brand-peachy) / 0.1));
-    --gradient-soft: linear-gradient(135deg, hsl(var(--brand-blush) / 0.5), hsl(var(--brand-peachy) / 0.3));
-    
+    --gradient-hero: linear-gradient(
+      135deg,
+      hsl(var(--brand-tangerine)),
+      hsl(var(--brand-barbie))
+    );
+    --gradient-accent: linear-gradient(
+      180deg,
+      hsl(var(--brand-blush) / 0.3),
+      hsl(var(--brand-peachy) / 0.1)
+    );
+    --gradient-soft: linear-gradient(
+      135deg,
+      hsl(var(--brand-blush) / 0.5),
+      hsl(var(--brand-peachy) / 0.3)
+    );
+
     /* Shadows */
     --shadow-soft: 0 4px 20px hsl(var(--brand-tangerine) / 0.15);
     --shadow-medium: 0 8px 30px hsl(var(--brand-tangerine) / 0.2);

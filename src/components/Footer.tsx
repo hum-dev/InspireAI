@@ -74,7 +74,7 @@ export const Footer = () => {
             <div className="space-y-3 font-roboto text-sm">
               <div className="flex items-center space-x-2">
                 <Mail className="h-4 w-4 text-primary" />
-                <span>info@aispireai-africa.com</span>
+                <span>info@aispireafrica.com</span>
               </div>
               <div className="flex items-center space-x-2">
                 <Phone className="h-4 w-4 text-primary" />
