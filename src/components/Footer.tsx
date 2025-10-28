@@ -3,6 +3,7 @@ import { Facebook, Twitter, Linkedin, Instagram, Mail, MapPin, Phone } from "luc
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import logo from "@/assets/InspireAI.png";
+import { NewsletterSubscription } from "@/components/NewsletterSubscription";
 
 export const Footer = () => {
   return (
@@ -73,7 +74,7 @@ export const Footer = () => {
             <div className="space-y-3 font-roboto text-sm">
               <div className="flex items-center space-x-2">
                 <Mail className="h-4 w-4 text-primary" />
-                <span>info@aispireai-africa.org</span>
+                <span>info@aispireai-africa.com</span>
               </div>
               <div className="flex items-center space-x-2">
                 <Phone className="h-4 w-4 text-primary" />
@@ -86,18 +87,7 @@ export const Footer = () => {
             </div>
             
             {/* Newsletter Signup */}
-            <div className="space-y-2">
-              <p className="font-roboto text-sm">Subscribe to our newsletter</p>
-              <div className="flex space-x-2">
-                <Input 
-                  placeholder="Your email" 
-                  className="bg-white/10 border-white/20 text-white placeholder:text-white/60"
-                />
-                <Button variant="default" size="sm">
-                  Subscribe
-                </Button>
-              </div>
-            </div>
+            <NewsletterSubscription variant="footer" />
           </div>
         </div>
 

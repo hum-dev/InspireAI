@@ -6,6 +6,8 @@ import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { Label } from "@/components/ui/label";
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
+import { useToast } from "@/hooks/use-toast";
+import { supabase } from "@/integrations/supabase/client";
 
 export default function Contact() {
   const [formData, setFormData] = useState({
@@ -18,12 +20,15 @@ export default function Contact() {
     message: ""
   });
 
+  const [isSubmitting, setIsSubmitting] = useState(false);
+  const { toast } = useToast();
+
   const contactMethods = [
     {
       icon: Mail,
       title: "Email Us",
       description: "Get in touch for general inquiries",
-      contact: "info@aispireai-africa.org",
+      contact: "info@aispireai-africa.com",
       note: "Response within 24 hours"
     },
     {
@@ -58,15 +63,63 @@ export default function Contact() {
     { value: "general", label: "General Inquiry", icon: MessageSquare }
   ];
 
-  const handleSubmit = (e: React.FormEvent) => {
+ const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    // Handle form submission here
-    console.log("Form submitted:", formData);
+    setIsSubmitting(true);
+
+    try {
+      // Save to database
+      const { error: dbError } = await supabase
+        .from("contact_submissions")
+        .insert([formData]);
+
+      if (dbError) throw dbError;
+
+      // Send email notification
+      const { error: emailError } = await supabase.functions.invoke("send-contact-email", {
+        body: formData,
+      });
+
+      if (emailError) {
+        console.error("Email sending error:", emailError);
+        // Still show success since data was saved
+        toast({
+          title: "Message Received",
+          description: "Your message has been saved. We'll respond via email within 24 hours.",
+        });
+      } else {
+        toast({
+          title: "Message Sent Successfully!",
+          description: "We've received your inquiry and will respond within 24 hours.",
+        });
+      }
+
+      // Reset form
+      setFormData({
+        name: "",
+        email: "",
+        phone: "",
+        organization: "",
+        inquiry_type: "",
+        subject: "",
+        message: ""
+      });
+    } catch (error: unknown) {
+      console.error("Contact form submission error:", error);
+      toast({
+        title: "Submission Failed",
+        description: "Sorry, there was an error. Please try again or email us at info@aispireafrica.org.",
+        variant: "destructive",
+      });
+    } finally {
+      setIsSubmitting(false);
+    }
   };
 
   const handleInputChange = (field: string, value: string) => {
     setFormData(prev => ({ ...prev, [field]: value }));
   };
+
 
   return (
     <div className="min-h-screen pt-16">
@@ -122,7 +175,7 @@ export default function Contact() {
       </section>
 
       {/* Contact Form */}
-      <section className="py-20 bg-card">
+       <section className="py-20 bg-card">
         <div className="container mx-auto px-4">
           <div className="max-w-3xl mx-auto">
             <div className="text-center mb-12">
@@ -171,7 +224,7 @@ export default function Contact() {
                         id="phone"
                         value={formData.phone}
                         onChange={(e) => handleInputChange("phone", e.target.value)}
-                        placeholder="+254 123 456 7890"
+                        placeholder="+234 123 456 7890"
                       />
                     </div>
                     <div className="space-y-2">
@@ -224,9 +277,9 @@ export default function Contact() {
                     />
                   </div>
 
-                  <Button type="submit" variant="cta" size="lg" className="w-full">
+                  <Button type="submit" variant="cta" size="lg" className="w-full" disabled={isSubmitting}>
                     <Send className="mr-2 h-5 w-5" />
-                    Send Message
+                    {isSubmitting ? "Sending..." : "Send Message"}
                   </Button>
                 </form>
               </CardContent>
@@ -292,7 +345,7 @@ export default function Contact() {
               <Clock className="h-8 w-8 mx-auto mb-4 text-primary" />
               <h3 className="font-montserrat font-semibold text-lg">Business Hours</h3>
               <p className="font-roboto">Monday - Friday</p>
-              <p className="font-roboto">9:00 AM - 5:00 PM WAT</p>
+              <p className="font-roboto">9:00 AM - 5:00 PM EAT</p>
             </div>
             <div className="space-y-2">
               <Mail className="h-8 w-8 mx-auto mb-4 text-primary" />
@@ -303,7 +356,7 @@ export default function Contact() {
             <div className="space-y-2">
               <MessageSquare className="h-8 w-8 mx-auto mb-4 text-primary" />
               <h3 className="font-montserrat font-semibold text-lg">WhatsApp Support</h3>
-              <p className="font-roboto">9:00 AM - 6:00 PM WAT</p>
+              <p className="font-roboto">9:00 AM - 6:00 PM EAT</p>
               <p className="font-roboto">Quick questions & support</p>
             </div>
           </div>

@@ -1,0 +1,15 @@
+{
+  "tasks": {
+    "dev": "deno run --allow-net --allow-env --watch index.ts",
+    "deploy": "supabase functions deploy chat-faq"
+  },
+  "compilerOptions": {
+    "allowJs": true,
+    "strict": true,
+    "noImplicitAny": true,
+    "noImplicitReturns": true,
+    "strictNullChecks": true,
+    "types": ["./deno.d.ts"]
+  },
+  "importMap": "../../import_map.json"
+}

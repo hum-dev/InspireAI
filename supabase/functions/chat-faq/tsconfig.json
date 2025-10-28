@@ -1,0 +1,20 @@
+{
+  "compilerOptions": {
+    "allowJs": true,
+    "strict": true,
+    "noImplicitAny": true,
+    "noImplicitReturns": true,
+    "strictNullChecks": true,
+    "lib": ["esnext", "dom"],
+    "target": "esnext",
+    "module": "esnext",
+    "moduleResolution": "node",
+    "types": ["./deno.d.ts"],
+    "baseUrl": ".",
+    "paths": {
+      "http/server": ["https://deno.land/std@0.168.0/http/server.ts"]
+    }
+  },
+  "include": ["./**/*.ts"],
+  "exclude": ["node_modules"]
+}
