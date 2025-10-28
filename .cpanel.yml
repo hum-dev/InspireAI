@@ -1,0 +1,8 @@
+---
+deployment:
+  tasks:
+    - export DEPLOYPATH=/home/aispirea/public_html/
+    - /bin/cp -R dist/* $DEPLOYPATH # Using 'dist' instead of 'build' because you're using Vite
+    - /bin/cp -R public/* $DEPLOYPATH # Copy public assets
+    - /bin/cp .htaccess $DEPLOYPATH # Copy .htaccess if you have one
+    - /bin/cp index.html $DEPLOYPATH # Ensure index.html is copied
