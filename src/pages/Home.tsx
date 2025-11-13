@@ -18,7 +18,7 @@ export default function Home() {
     {
       icon: Zap,
       title: "AI & Robotics Bootcamps",
-      description: "Intensive hands-on training programs for students aged 11-25, building the next generation of tech innovators.",
+      description: "Intensive hands-on training programs for students aged 11-17, building the next generation of tech innovators.",
       image: roboticsWorkshop,
     },
     {

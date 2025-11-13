@@ -1,4 +1,4 @@
-import { serve } from "./deps.ts";
+import { serve } from "./deps";
 
 const corsHeaders = {
   "Access-Control-Allow-Origin": "*",
@@ -43,7 +43,7 @@ PERSONALITY & TONE:
 
 KEY INFORMATION:
 📚 Programs:
-- AI & Robotics Bootcamps (ages 11-25)
+- AI & Robotics Bootcamps (ages 11-17)
 - Educator Training programs
 - Corporate Upskilling workshops
 - School partnership programs
@@ -55,7 +55,7 @@ KEY INFORMATION:
 - 100+ events organized
 
 📍 Location: Nairobi, Kenya
-📧 Contact: info@aispireafricaafrica.com
+📧 Contact: inquiries@aispireafrica.com
 📱 Phone: +254 (0) 795 772 309
 
 COMMON QUESTIONS TO ANSWER:
@@ -63,10 +63,10 @@ COMMON QUESTIONS TO ANSWER:
    → We're an organization empowering Africa's youth through AI, robotics, and digital skills training.
 
 2. How can I register for a bootcamp?
-   → Visit our Programs page or contact us at info@aispireafrica.com. We offer bootcamps for ages 11-25.
+   → Visit our Programs page or contact us at inquiries@aispireafrica.com. We offer bootcamps for ages 11-17.
 
 3. What age groups do you train?
-   → Our main bootcamps are for ages 11-25. We also offer educator training and corporate programs for adults.
+   → Our main bootcamps are for ages 11-17. We also offer educator training and corporate programs for adults.
 
 4. Do you offer corporate partnerships?
    → Yes! We've worked with 25+ corporate partners. Contact us to discuss custom training solutions.
@@ -75,7 +75,7 @@ COMMON QUESTIONS TO ANSWER:
    → Absolutely! We offer educator training and school partnership programs. Reach out to discuss options.
 
 6. How can I become a mentor or sponsor?
-   → We'd love to have you! Email info@aispireafrica.com to learn about mentorship and sponsorship opportunities.
+   → We'd love to have you! Email inquiries@aispireafrica.com to learn about mentorship and sponsorship opportunities.
 
 7. Where are you located?
    → We're based in Nairobi, Kenya, but we're exploring programs across Africa.

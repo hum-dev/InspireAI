@@ -10,14 +10,14 @@ export default function Programs() {
   const programs = [
     {
       title: "AI & Robotics Bootcamp (Youth)",
-      duration: "3 months",
+      duration: "3 Weeks",
       level: "Beginner to Intermediate",
-      age: "11-25 years",
+      age: "11-17 years",
       description: "Intensive hands-on training in AI fundamentals, machine learning, and robotics programming. Students build real projects and compete in robotics challenges.",
       features: ["Python Programming", "Machine Learning Basics", "Robot Assembly & Programming", "AI Ethics", "Final Project Showcase"],
       image: roboticsWorkshop,
-      price: "Sponsored - Free",
-      nextStart: "January 15, 2025"
+      price: "$271 (35,000 KES)",
+      nextStart: "November 05, 2025"
     },
     {
       title: "Educator Training Program",
@@ -27,7 +27,7 @@ export default function Programs() {
       description: "Comprehensive training for teachers and educators to integrate AI literacy and digital skills into their curriculum.",
       features: ["AI Curriculum Design", "Teaching Methodologies", "Assessment Strategies", "Resource Development", "Community Building"],
       image: aiTraining,
-      price: "$299",
+      price: "Contact for Quote",
       nextStart: "February 1, 2025"
     },
     {

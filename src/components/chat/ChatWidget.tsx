@@ -125,7 +125,7 @@ export const ChatWidget = () => {
         ...prev,
         {
           role: "assistant",
-          content: "Sorry, I'm having trouble connecting right now. Please try again or email us at info@inspireai-africa.com.",
+          content: "Sorry, I'm having trouble connecting right now. Please try again or email us at inquiries@inspireai-africa.com.",
           timestamp: new Date(),
         },
       ]);

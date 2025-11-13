@@ -29,7 +29,7 @@ const handler = async (req: Request): Promise<Response> => {
 
     // Send confirmation email to user
     const userEmailResponse = await resend.emails.send({
-      from: "AIspire Africa <onboarding@resend.dev>",
+      from: "AIspire Africa <aisa@aispireafrica.com>",
       to: [contactData.email],
       subject: "Thank you for contacting AIspire Africa!",
       html: `
@@ -59,7 +59,7 @@ const handler = async (req: Request): Promise<Response> => {
           <p style="font-size: 12px; color: #6b7280;">
             AIspire Africa<br>
             Nairobi, Kenya<br>
-            info@aispireafrica.com | +254 (0) 795 772 309
+            inquiries@aispireafrica.com | +254 (0) 795 772 309
           </p>
         </div>
       `,
@@ -67,8 +67,8 @@ const handler = async (req: Request): Promise<Response> => {
 
     // Send notification email to AIspire Africa team
     const teamEmailResponse = await resend.emails.send({
-      from: "AIspire Africa Contact Form <onboarding@resend.dev>",
-      to: ["info@aispireafrica.com"],
+      from: "AIspire Africa Contact Form <aisa@aispireafrica.com>",
+      to: ["inquiries@aispireafrica.com"],
       subject: `New Contact Form Submission: ${contactData.subject}`,
       html: `
         <div style="font-family: Arial, sans-serif; max-width: 600px; margin: 0 auto;">

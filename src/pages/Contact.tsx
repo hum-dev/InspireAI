@@ -28,7 +28,7 @@ export default function Contact() {
       icon: Mail,
       title: "Email Us",
       description: "Get in touch for general inquiries",
-      contact: "info@aispireai-africa.com",
+      contact: "inquiries@aispireaiafrica.com",
       note: "Response within 24 hours"
     },
     {
@@ -69,9 +69,12 @@ export default function Contact() {
 
     try {
       // Save to database
+      // supabase client table types may be empty in some setups; ignore TS here
+      // to allow the runtime call to proceed.
+    
       const { error: dbError } = await supabase
         .from("contact_submissions")
-        .insert([formData]);
+        .insert([formData as Record<string, unknown>]);
 
       if (dbError) throw dbError;
 
@@ -108,7 +111,7 @@ export default function Contact() {
       console.error("Contact form submission error:", error);
       toast({
         title: "Submission Failed",
-        description: "Sorry, there was an error. Please try again or email us at info@aispireafrica.org.",
+        description: "Sorry, there was an error. Please try again or email us at inquiries@aispireafrica.org.",
         variant: "destructive",
       });
     } finally {
